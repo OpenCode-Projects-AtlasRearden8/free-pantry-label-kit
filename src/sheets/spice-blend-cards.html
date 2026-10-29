@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Spice-Blend Cards</title>
+<link rel="stylesheet" href="../print.css">
+<style>
+  .cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.14in; }
+  .card {
+    border: 1.5px dashed var(--cut);
+    height: 2.86in;
+    display: flex;
+    flex-direction: column;
+  }
+  .card .front {
+    flex: 1;
+    background: var(--tint);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-bottom: 1.5px dotted var(--fold);
+    text-align: center;
+    padding: 0.08in;
+  }
+  .card .front h2 {
+    font-family: var(--plain-title);
+    font-size: 16.5pt;
+    font-weight: 700;
+    margin: 0;
+  }
+  .card .front .hint { max-width: 2.6in; }
+  .card .back {
+    flex: 1.25;
+    padding: 0.08in 0.14in;
+    font-size: 9pt;
+    line-height: 1.45;
+  }
+  .card .back h3 {
+    font-size: 7.5pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--soft);
+    margin: 0 0 3px;
+  }
+  .card .back ul { margin: 0; padding-left: 0.16in; list-style: none; }
+  .card .back li::before { content: "•"; color: var(--accent); margin-right: 5px; }
+  .card .back .mk {
+    margin-top: 3px;
+    border-top: 1px solid var(--line);
+    padding-top: 3px;
+    color: var(--soft);
+    font-size: 8.5pt;
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="sheet-head">
+    <h1>Spice-Blend Cards</h1>
+    <div class="legend"><span class="sw sw-cut"></span> cut along dashed<br><span class="sw sw-fold"></span> fold on dotted — recipe hides inside</div>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <div class="front"><h2>Taco Blend</h2><span class="badge">per 1 lb meat</span><div class="hint">tame the heat by halving the chipotle</div></div>
+      <div class="back">
+        <h3>Mix together, shake, store</h3>
+        <ul><li>4 tsp chili powder</li><li>2 tsp cumin</li><li>1 tsp each: garlic powder, paprika, oregano</li><li>½ tsp each: onion powder, salt, crushed chipotle</li></ul>
+        <div class="mk">Use within: 6 months · Brown 1 lb meat + blend + ⅓ cup water</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="front"><h2>Curry Powder</h2><span class="badge">mild &amp; warm</span><div class="hint">toast lightly in a dry pan for a deeper flavor</div></div>
+      <div class="back">
+        <h3>Mix together, shake, store</h3>
+        <ul><li>2 Tbsp each: coriander, cumin, turmeric</li><li>1 tsp each: ginger, mustard seed</li><li>½ tsp each: black pepper, cayenne (optional), cinnamon</li></ul>
+        <div class="mk">Use within: 6 months · Start with 1 Tbsp per pot of stew</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="front"><h2>Pumpkin Pie Spice</h2><span class="badge">fall in a jar</span><div class="hint">swap in gingerbread by adding 1 tsp more ginger</div></div>
+      <div class="back">
+        <h3>Mix together, shake, store</h3>
+        <ul><li>3 Tbsp cinnamon</li><li>2 tsp each: ginger, nutmeg</li><li>1 tsp each: allspice, cloves</li></ul>
+        <div class="mk">Use within: 6 months · 1–2 tsp per pie, latte, or quick bread</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="front"><h2>Ranch Seasoning</h2><span class="badge">dip, dress, repeat</span><div class="hint">sprinkle on popcorn immediately</div></div>
+      <div class="back">
+        <h3>Mix together, shake, store</h3>
+        <ul><li>2 Tbsp each: dried parsley, dried dill</li><li>1 Tbsp each: garlic powder, onion powder, dried chives</li><li>1 tsp each: salt, black pepper</li></ul>
+        <div class="mk">Use within: 3 months · Stir 1 Tbsp into 1 cup sour cream or yogurt</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="front"><h2>Italian Herb Blend</h2><span class="badge">garden shaker</span><div class="hint">finish coarser for rubs, finer for dressings</div></div>
+      <div class="back">
+        <h3>Mix together, shake, store</h3>
+        <ul><li>2 Tbsp each: dried basil, dried oregano</li><li>1 Tbsp each: dried rosemary, dried thyme</li><li>1 tsp each: garlic powder, red pepper flakes</li></ul>
+        <div class="mk">Use within: 6 months · Sprinkle on roasts, sauces, and focaccia</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="front"><h2>Saturday Chili Powder</h2><span class="badge">big pot energy</span><div class="hint">named for the day a huge pot gets made</div></div>
+      <div class="back">
+        <h3>Mix together, shake, store</h3>
+        <ul><li>3 Tbsp each: ancho chili powder, cumin</li><li>1 Tbsp each: paprika, oregano, cocoa powder</li><li>2 tsp each: garlic powder, cornmeal (thickener)</li></ul>
+        <div class="mk">Use within: 6 months · 2–3 Tbsp per pot of chili or beans</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sheet-foot">
+    <span>Print at 100% scale on US Letter, no scaling</span>
+    <span>cut, fold in half on the dotted line, tuck into the jar or drawer</span>
+  </div>
+</div>
+</body>
+</html>

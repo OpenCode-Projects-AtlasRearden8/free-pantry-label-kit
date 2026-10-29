@@ -1,0 +1,14 @@
+[
+  { "file": "how-to-fold-and-cut",    "title": "How to Fold & Cut",                                 "pages": 1 },
+  { "file": "jar-labels-plain",       "title": "Jar Labels (Plain)",                                "pages": 2 },
+  { "file": "jar-labels-script",      "title": "Jar Labels (Script)",                               "pages": 2 },
+  { "file": "canister-labels-plain",  "title": "Canister Labels (Plain)",                           "pages": 2 },
+  { "file": "canister-labels-script", "title": "Canister Labels (Script)",                          "pages": 2 },
+  { "file": "spice-blend-cards",      "title": "Spice-Blend Cards",                                 "pages": 1 },
+  { "file": "baking-mix-cards",       "title": "Baking-Mix Cards",                                  "pages": 1 },
+  { "file": "freezer-date-labels",    "title": "Freezer-Bag Date Labels",                           "pages": 1 },
+  { "file": "batch-meal-labels",      "title": "Batch-Meal Labels",                                 "pages": 1 },
+  { "file": "use-within-chart",       "title": "Use-Within Cheat Chart",                            "pages": 1 },
+  { "file": "shelf-category-map",     "title": "Shelf Category Maps",                               "pages": 2 },
+  { "file": "write-in-refill-cards",  "title": "Write-In Refill Cards",                             "pages": 1 }
+]

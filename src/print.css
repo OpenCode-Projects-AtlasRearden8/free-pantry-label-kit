@@ -1,0 +1,140 @@
+/* Shared print CSS for the Free Pantry Label Kit.
+   Sheets are US Letter (8.5in x 11in); print at 100% / no scaling.
+   Dashed borders = cut lines. Dotted borders = fold lines. */
+
+:root {
+  --paper: #fffdf7;
+  --ink: #3d3226;
+  --soft: #6b5d4d;
+  --rule: #a08f7b;
+  --cut: #b0543f;
+  --fold: #5a7d63;
+  --accent: #b0543f;
+  --tint: #f6efe3;
+  --line: #c9bba7;
+  --plain-title: "Sen", "DejaVu Sans", sans-serif;
+  --plain-body: "Sen", "Hind", "DejaVu Sans", sans-serif;
+  --script-title: "Niconne", "Dancing Script", "Pacifico", "DejaVu Serif", cursive;
+  --script-body: "Kalam", "Caveat", "DejaVu Serif", cursive;
+}
+
+@page {
+  size: letter;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--plain-body);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.sheet {
+  width: 8.5in;
+  height: 11in;
+  box-sizing: border-box;
+  padding: 0.38in;
+  position: relative;
+  overflow: hidden;
+  page-break-after: always;
+}
+.sheet:last-child {
+  page-break-after: auto;
+}
+
+/* ---------- header / footer ---------- */
+
+.sheet-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 0.06in;
+  margin-bottom: 0.12in;
+}
+.sheet-head h1 {
+  font-family: var(--plain-title);
+  font-size: 16pt;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0;
+}
+.script-mode .sheet-head h1 {
+  font-family: var(--script-title);
+  font-size: 22pt;
+  font-weight: 400;
+}
+.legend {
+  font-size: 7.5pt;
+  color: var(--soft);
+  text-align: right;
+  line-height: 1.5;
+}
+.legend .sw {
+  display: inline-block;
+  width: 0.45in;
+  height: 0.09in;
+  vertical-align: middle;
+  margin: 0 3px;
+}
+.sw-cut {
+  border-top: 1.5px dashed var(--cut);
+}
+.sw-fold {
+  border-top: 1.5px dotted var(--fold);
+}
+
+.sheet-foot {
+  position: absolute;
+  left: 0.38in;
+  right: 0.38in;
+  bottom: 0.2in;
+  font-size: 7pt;
+  color: var(--soft);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------- shared pieces ---------- */
+
+.cutbox {
+  border: 1.5px dashed var(--cut);
+  position: relative;
+}
+.foldline {
+  border-top: 1.5px dotted var(--fold);
+}
+.grid {
+  display: grid;
+  gap: 0.14in;
+}
+.hint {
+  font-size: 7.5pt;
+  color: var(--soft);
+}
+.pad {
+  padding: 0.1in 0.14in;
+}
+.center {
+  text-align: center;
+}
+.badge {
+  display: inline-block;
+  font-size: 7pt;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--accent);
+  border-radius: 3px;
+  padding: 2px 7px;
+}
+
+.write-line {
+  border-bottom: 1px solid var(--rule);
+  height: 0.22in;
+}

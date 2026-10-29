@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Freezer-Bag Date Labels</title>
+<link rel="stylesheet" href="../print.css">
+<style>
+  .labels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.14in; }
+  .lab {
+    border: 1.5px dashed var(--cut);
+    height: 1.62in;
+    padding: 0.09in 0.12in;
+    display: flex;
+    flex-direction: column;
+  }
+  .lab .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  .lab .cat { font-size: 6.5pt; letter-spacing: 0.12em; text-transform: uppercase; color: var(--paper); background: var(--accent); border-radius: 3px; padding: 1px 6px; }
+  .lab .within { font-size: 6.5pt; color: var(--soft); letter-spacing: 0.06em; text-transform: uppercase; }
+  .lab .field { display: flex; align-items: baseline; gap: 5px; margin-top: 3px; }
+  .lab .field .k { font-size: 7pt; letter-spacing: 0.08em; text-transform: uppercase; color: var(--soft); white-space: nowrap; }
+  .lab .field .line { border-bottom: 1px solid var(--rule); flex: 1; height: 0.14in; }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="sheet-head">
+    <h1>Freezer-Bag Date Labels</h1>
+    <div class="legend"><span class="sw sw-cut"></span> cut along dashed, tape onto bag<br>write dates in pencil</div>
+  </div>
+
+  <div class="labels">
+    <!-- 15 labels: cut-and-stick, pencil dates -->
+
+    <div class="lab"><div class="head"><span class="cat">Cooked dish</span><span class="within">use within 3 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+    <div class="lab"><div class="head"><span class="cat">Cooked dish</span><span class="within">use within 3 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+    <div class="lab"><div class="head"><span class="cat">Cooked dish</span><span class="within">use within 3 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+
+    <div class="lab"><div class="head"><span class="cat">Raw meat</span><span class="within">use within 3–4 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+    <div class="lab"><div class="head"><span class="cat">Raw meat</span><span class="within">use within 3–4 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+    <div class="lab"><div class="head"><span class="cat">Raw meat</span><span class="within">use within 3–4 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+
+    <div class="lab"><div class="head"><span class="cat">Fruit + veg</span><span class="within">use within 8–12 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+    <div class="lab"><div class="head"><span class="cat">Fruit + veg</span><span class="within">use within 8–12 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+    <div class="lab"><div class="head"><span class="cat">Fruit + veg</span><span class="within">use within 8–12 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+
+    <div class="lab"><div class="head"><span class="cat">Soups + stock</span><span class="within">use within 4–6 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+    <div class="lab"><div class="head"><span class="cat">Soups + stock</span><span class="within">use within 4–6 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+    <div class="lab"><div class="head"><span class="cat">Bread + doughs</span><span class="within">use within 3 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+
+    <div class="lab"><div class="head"><span class="cat">Bread + doughs</span><span class="within">use within 3 months</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+    <div class="lab"><div class="head"><span class="cat">Whenever</span><span class="within">use within ______</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+    <div class="lab"><div class="head"><span class="cat">Whenever</span><span class="within">use within ______</span></div><div class="field"><span class="k">item</span><div class="line"></div></div><div class="field"><span class="k">date in</span><div class="line"></div></div><div class="field"><span class="k">date out</span><div class="line"></div></div></div>
+  </div>
+
+  <div class="sheet-foot">
+    <span>Print at 100% scale on US Letter, no scaling</span>
+    <span>squeeze air out, lay flat to freeze, pencil dates</span>
+  </div>
+</div>
+</body>
+</html>

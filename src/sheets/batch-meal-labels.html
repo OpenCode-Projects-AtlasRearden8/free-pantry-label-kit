@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Batch-Meal Labels</title>
+<link rel="stylesheet" href="../print.css">
+<style>
+  .labels { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.14in; }
+  .lab {
+    border: 1.5px dashed var(--cut);
+    height: 2.5in;
+    padding: 0.1in 0.14in;
+    display: flex;
+    flex-direction: column;
+  }
+  .lab h2 {
+    font-family: var(--plain-title);
+    font-size: 13.5pt;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--line);
+  }
+  .lab .serves { font-size: 7pt; letter-spacing: 0.09em; text-transform: uppercase; color: var(--soft); margin-top: 2px; }
+  .lab .rows { margin-top: 5px; }
+  .lab .field { display: flex; align-items: baseline; gap: 6px; margin-top: 4px; }
+  .lab .field .k { font-size: 7pt; letter-spacing: 0.08em; text-transform: uppercase; color: var(--soft); white-space: nowrap; }
+  .lab .field .line { border-bottom: 1px solid var(--rule); flex: 1; height: 0.13in; }
+  .lab .reheat {
+    font-size: 8.5pt;
+    line-height: 1.4;
+    color: var(--ink);
+    background: var(--tint);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    padding: 4px 7px;
+    margin-top: 6px;
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <div class="sheet-head">
+    <h1>Batch-Meal Labels</h1>
+    <div class="legend"><span class="sw sw-cut"></span> cut along dashed, tape onto freezer pack<br>write dates in pencil</div>
+  </div>
+
+  <div class="labels">
+    <div class="lab">
+      <h2>Sunday Chili</h2><div class="serves">Serves 6 · single batch quartered</div>
+      <div class="rows">
+        <div class="field"><span class="k">made on</span><div class="line"></div></div>
+        <div class="field"><span class="k">use by</span><div class="line"></div></div>
+        <div class="field"><span class="k">source pot</span><div class="line"></div></div>
+      </div>
+      <div class="reheat"><b>Reheat:</b> thaw overnight in the fridge, simmer 10 min, add a splash of water</div>
+    </div>
+
+    <div class="lab">
+      <h2>Taco Beef</h2><div class="serves">Serves 5 · pairs with Taco Blend card</div>
+      <div class="rows">
+        <div class="field"><span class="k">made on</span><div class="line"></div></div>
+        <div class="field"><span class="k">use by</span><div class="line"></div></div>
+        <div class="field"><span class="k">source pot</span><div class="line"></div></div>
+      </div>
+      <div class="reheat"><b>Reheat:</b> straight into the skillet from frozen works fine — low heat, lid on</div>
+    </div>
+
+    <div class="lab">
+      <h2>Chicken Curry</h2><div class="serves">Serves 6 · mild to medium</div>
+      <div class="rows">
+        <div class="field"><span class="k">made on</span><div class="line"></div></div>
+        <div class="field"><span class="k">use by</span><div class="line"></div></div>
+        <div class="field"><span class="k">source pot</span><div class="line"></div></div>
+      </div>
+      <div class="reheat"><b>Reheat:</b> thaw, warm gently with ¼ cup coconut milk; rice cooks fresh</div>
+    </div>
+
+    <div class="lab">
+      <h2>Lasagna Pan</h2><div class="serves">Serves 6 · bakes from frozen</div>
+      <div class="rows">
+        <div class="field"><span class="k">made on</span><div class="line"></div></div>
+        <div class="field"><span class="k">use by</span><div class="line"></div></div>
+        <div class="field"><span class="k">source pan</span><div class="line"></div></div>
+      </div>
+      <div class="reheat"><b>Reheat:</b> covered, 375°F for 60–75 min from frozen, rest 10 min</div>
+    </div>
+
+    <div class="lab">
+      <h2>Meatballs</h2><div class="serves">Serves 4 · sauce-free</div>
+      <div class="rows">
+        <div class="field"><span class="k">made on</span><div class="line"></div></div>
+        <div class="field"><span class="k">use by</span><div class="line"></div></div>
+        <div class="field"><span class="k">source pot</span><div class="line"></div></div>
+      </div>
+      <div class="reheat"><b>Reheat:</b> simmer straight from frozen in any sauce for 15 min</div>
+    </div>
+
+    <div class="lab">
+      <h2>Any-Pot Soup</h2><div class="serves">Serves 4 · frees the pot for the next batch</div>
+      <div class="rows">
+        <div class="field"><span class="k">made on</span><div class="line"></div></div>
+        <div class="field"><span class="k">use by</span><div class="line"></div></div>
+        <div class="field"><span class="k">what's inside</span><div class="line"></div></div>
+      </div>
+      <div class="reheat"><b>Reheat:</b> thaw overnight or straight to the pot; creamy ones get whisked</div>
+    </div>
+  </div>
+
+  <div class="sheet-foot">
+    <span>Print at 100% scale on US Letter, no scaling</span>
+    <span>freezer packs stay organized when every pack has a "use by" date</span>
+  </div>
+</div>
+</body>
+</html>

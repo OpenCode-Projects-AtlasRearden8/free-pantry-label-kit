@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Shelf Category Maps</title>
+<link rel="stylesheet" href="../print.css">
+<style>
+  .shelf-map { margin-top: 0.05in; }
+  .zone {
+    border: 1.5px solid var(--rule);
+    border-radius: 5px;
+    background: var(--tint);
+    height: 1.16in;
+    margin-bottom: 0.1in;
+    padding: 0.07in 0.12in;
+    display: flex;
+    gap: 0.14in;
+  }
+  .zone .tag {
+    width: 1.7in;
+    flex: none;
+    border-right: 1px dashed var(--rule);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+  }
+  .zone .tag .write-line { height: 0.2in; }
+  .zone .tag .k { font-size: 6.5pt; letter-spacing: 0.1em; text-transform: uppercase; color: var(--soft); }
+  .zone .items {
+    flex: 1;
+    font-size: 8.5pt;
+    line-height: 1.5;
+    color: var(--ink);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2px;
+  }
+  .zone .items .blank-line { border-bottom: 1px dotted var(--rule); flex: 1; }
+  .map-title {
+    font-size: 8.5pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--soft);
+    margin-bottom: 5px;
+  }
+  .filled .zone .name {
+    font-family: var(--plain-title);
+    font-weight: 700;
+    font-size: 11pt;
+  }
+  .filled .zone .name small { display: block; font-weight: 400; font-size: 7.5pt; color: var(--soft); letter-spacing: 0.02em; }
+  .doorstrip {
+    margin-top: 4px;
+    border: 1.5px dashed var(--cut);
+    padding: 6px 10px;
+    font-size: 8.5pt;
+    color: var(--soft);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+</style>
+</head>
+<body>
+
+<!-- page 1: blank map, write your own zones -->
+<div class="sheet">
+  <div class="sheet-head">
+    <h1>Shelf Category Map — Blank</h1>
+    <div class="legend"><span class="sw sw-cut"></span> cut the door strip<br>tape the map inside the pantry door</div>
+  </div>
+
+  <div class="shelf-map">
+    <div class="map-title">eye-level shelves</div>
+    <div class="zone"><div class="tag"><div class="k">shelf 1 · category</div><div class="write-line"></div><div class="k">rotate: new goes behind</div></div><div class="items"><div class="blank-line"></div></div></div>
+    <div class="zone"><div class="tag"><div class="k">shelf 2 · category</div><div class="write-line"></div></div><div class="items"><div class="blank-line"></div></div></div>
+    <div class="zone"><div class="tag"><div class="k">shelf 3 · category</div><div class="write-line"></div></div><div class="items"><div class="blank-line"></div></div></div>
+
+    <div class="map-title">waist-level shelves</div>
+    <div class="zone"><div class="tag"><div class="k">shelf 4 · category</div><div class="write-line"></div></div><div class="items"><div class="blank-line"></div></div></div>
+    <div class="zone"><div class="tag"><div class="k">shelf 5 · category</div><div class="write-line"></div></div><div class="items"><div class="blank-line"></div></div></div>
+
+    <div class="map-title">low / floor</div>
+    <div class="zone"><div class="tag"><div class="k">bottom · category</div><div class="write-line"></div></div><div class="items"><div class="blank-line"></div></div></div>
+  </div>
+
+  <div class="doorstrip">
+    <span>cut here, pencil your rules for this pantry (e.g. "duplicates live on shelf 5")</span>
+    <span>tape at eye level inside the pantry door</span>
+  </div>
+</div>
+
+<!-- page 2: starter map, already filled -->
+<div class="sheet filled">
+  <div class="sheet-head">
+    <h1>Shelf Category Map — Starter</h1>
+    <div class="legend">a proven layout to copy or adjust</div>
+  </div>
+
+  <div class="shelf-map">
+    <div class="zone">
+      <div class="tag"><div class="name">Baking<small>shelf 1</small></div></div>
+      <div class="items">flour · sugar · brown &amp; powdered sugar · oats · cocoa · baking soda &amp; powder · vanilla · sprinkles</div>
+    </div>
+    <div class="zone">
+      <div class="tag"><div class="name">Grains + Pasta<small>shelf 2</small></div></div>
+      <div class="items">rice · pasta · dried beans · breadcrumbs · tortillas (shelf-stable) · quinoa</div>
+    </div>
+    <div class="zone">
+      <div class="tag"><div class="name">Cans + Jars<small>shelf 3</small></div></div>
+      <div class="items">tomatoes · beans · broths · tuna · pickles · sauces · "new behind old" rotation lives here</div>
+    </div>
+    <div class="zone">
+      <div class="tag"><div class="name">Spice Drawer<small>shelf 4</small></div></div>
+      <div class="items">ground spices · salt pepper grinder · homemade blend cards from the spice-blend sheet</div>
+    </div>
+    <div class="zone">
+      <div class="tag"><div class="name">Drinks + Snacks<small>shelf 5</small></div></div>
+      <div class="items">coffee + tea canisters · hot cocoa mix · crackers · chips · nut butters</div>
+    </div>
+    <div class="zone">
+      <div class="tag"><div class="name">Bulk + Backup<small>bottom</small></div></div>
+      <div class="items">large bags of rice/flour · club-size restock · paper goods · "use first" basket for open snacks</div>
+    </div>
+  </div>
+
+  <div class="doorstrip">
+    <span>adjust freely: no pantry in history has ever matched a plan perfectly</span>
+    <span>update the blank map version when you reorganize</span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "free-pantry-label-kit",
+  "version": "1.0.0",
+  "description": "Free printable pantry labels, cards, and charts. HTML/CSS sources print to PDF via one build script with fold-and-cut notes; unbranded PDFs in printables/. Local build, no accounts.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "node tools/build.js",
+    "test": "node tools/test.js"
+  },
+  "keywords": [
+    "printables",
+    "pantry",
+    "kitchen",
+    "labels",
+    "pdf",
+    "free"
+  ]
+}
